@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Comfort at your hands</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../navbar.css">
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 550px
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* .container-fluid{
+      margin-top: 10rem;
+    } */
+
+    /* .navbar-default{
+      margin-bottom: 100rem;
+    } */
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./home.html">Find your dia-buddy!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./tables.html">DAILY LOG</a></li>
+          <li><a href="#">DASHBOARD</a></li>
+          <li><a href="./community.html">COMMUNITY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <!-- <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Upcoming Events</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Know more</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          <li><a href="../index.html"><button type="button" class="btn btn-info btn-lg">Sign Out</button></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-inverse visible-xs">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Carb Count</a></li>
+          <li><a href="#">Insulin Measure</a></li>
+          <li><a href="#">Carb Count</a></li>
+          <li><a href="#">Connect to your device</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav hidden-xs">
+        <h2>Dashboard</h2>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#section1">Carb Count</li>
+          <li><a href="#section2">Insulin Measure</a></li>
+          <li><a href="#section3">Carb Count</a></li>
+          <li><a href="#section3">Connect to your device</a></li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" data-toggle="toggle">
+              Send daily reminder
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" data-toggle="toggle">
+              Send reminder after every 3 days to change needle
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" data-toggle="toggle">
+              Send reminder to change lancet after 5 days
+            </label>
+          </div>
+        </ul><br>
+      </div>
+      <br>
+
+      <div class="col-sm-9">
+        <div class="well">
+          <h4>Carb Count</h4>
+          <p>Count Your Carbohydrate and Fat intake.</p>
+          <p>1st Short acting Apidra - 9:00 AM</p>
+          <p>2nd Short acting Apidra - 1:00 PM</p>
+          <p>3rd Short acting Apidra - 9:00 PM</p>
+          <p>4th Long acting Toujeo - 9:00 AM</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="well">
+              <h4>Measure Your insulin</h4>
+              <p>See previously records of units</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="well">
+              <h4>Know your Foods</h4>
+              <p>Low & High GI</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="well">
+              <h4>Record Keto</h4>
+              <p>Check your keto status and water consumption.</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="well">
+              <h4>(%)Hypoglycemia in a day</h4>
+              <p>Calorie count = 30%</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="well">
+              <p>
+              <h4>Daily Reminder</h4>
+              </p>
+              <p>Yoga</p>
+              <p>meditation</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <p>
+              <h4>Daily Must have in Diet</h4>
+              </p>
+              <p>Soak almonds</p>
+              <p>Have walnuts and pista</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <p>
+              <h4>Daily Juice</h4>
+              </p>
+              <p>Karela Juice Giloy Kadha before meals</p>
+              <p>Neem Juice + Protien powder with milk</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="well">
+              <p>20 days of last endo visit</p>
+              <p>Dr.Arun Kedia, Raipur</p>
+              <p>Told me to check ketone after 2 hrs of meal</p>
+              <p>To change my lancet</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <p>Pending short acting insulin expenses</p>
+              <p>800/- 1c Apidra, 1499/- 1c Toujeo </p>
+              <p>Total expenses = 2c Apidra+1c Toujeo + 1box lancet = Rs.3949 approx. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

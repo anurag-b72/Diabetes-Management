@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>We Dia-Buddy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="../navbar.css">
+
+  <style>
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+    .col-sm-4 {      
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 2rem;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Find your dia-buddy!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./tables.html">DAILY LOG</a></li>
+          <li><a href="./template.html">DASHBOARD</a></li>
+          <li><a href="./community.html">COMMUNITY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <!-- <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Upcoming Events</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Know more</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          <li><a href="../index.html"><button type="button" class="btn btn-info btn-lg">Sign Out</button></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <form class="navbar-form navbar-left" action="/action_page.php">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>
+      </div>
+    </div>
+  </form> -->
+  <div class="jumbotron text-center">
+    <h1>We Dia-Buddy</h1>
+    <p>Control and manage your diabetes on fingers(not pricking)</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Monitor Your Blood Glucose</h3>
+        <p>Easy way to monitor your Blood Glucose Levels.</p>
+        <p>Now, there's no need of long hard copies of your blood sugar in papers, save your records here, by connecting
+          to your devices or manually updating finger pricked results. Also get record of your regular insulin intake.
+        </p>
+        <div class="container">
+          <!-- Trigger the modal with a button -->
+          <a href="./tables.html"><button type="button" class="btn btn-info btn-lg">Check Daily
+              Log</button></a>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Message Sent!</h4>
+
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h3>SOS for Hypoglycemia</h3>
+        <p>Save/Update your frequent/favorite contacts</p>
+        <p>During Hypoglycemia aka low blood sugar, there's a chance of being unconcious and not able to talk or think.
+          This SOS button will help you to inform your nearby/favorite contacts.</p>
+        <div class="container">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Send SOS
+            message</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Message Sent!</h4>
+                </div>
+                <div class="modal-body">
+                  <p>My blood sugar is low, please keep checking on me and make , Bring me instant glucose or some
+                    chocolate.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Book an appointment</h3>
+        <p>Check your last visit to your Endocrinologists</p>
+        <p>You can also book for over-all body check-up and visit to nearby doctors.</p>
+        <p>Check the Keto status of your body and manage the BMI </p>
+        <div class="container">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Book an
+            appointment</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Search for a nearby doctor</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
